@@ -1,0 +1,16 @@
+{
+  "name": "UI-coding-challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:vakodrazan/UI-coding-challenge.git",
+  "author": "<noeline.mar@onja.org>",
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.38.0"
+  },
+  "scripts": {
+    "scss": "node-sass scss -o webroot/css",
+    "scss:watch": "npm run scss && node-sass scss -w -o webroot/css",
+    "start": "npm run scss:watch"
+  }
+}
