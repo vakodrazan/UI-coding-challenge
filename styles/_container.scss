@@ -1,0 +1,11 @@
+@import './global-styles.scss';
+
+.container {
+  padding: 13px;
+  margin: 0;
+
+  @media (min-width: $desktop-breakpoint) {
+    margin: auto;
+    max-width: 1000px;
+  }
+}

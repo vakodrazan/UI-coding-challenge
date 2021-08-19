@@ -1,0 +1,18 @@
+@import './global-styles';
+
+.header {
+  background-color: #f5f6f8;
+
+  & > .container {
+    @include flex-row-layout;
+    flex-direction: column;
+
+    @media (min-width: $desktop-breakpoint) {
+      flex-direction: row;
+    }
+  }
+
+  &__pagination__list {
+    @include flex-row-layout;
+  }
+}

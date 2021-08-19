@@ -1,5 +1,9 @@
+$desktop-breakpoint: 1040px;
+
 body {
-  background-color: beige;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -23,6 +27,13 @@ ul {
 }
 
 @mixin flex-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-row-layout {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
